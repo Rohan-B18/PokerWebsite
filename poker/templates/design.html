@@ -1,12 +1,14 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Welcome to our Poker Website!
+    How did we design our poker solver?
 {% endblock %}
 
 {% block main %}
 <div class="col-md-8">
-    <p class = "lead"><strong>Our names are Rohan and Vincent, and welcome to our Poker Solver Website! This website will teach you how to play poker and what to do on a given hand. Enjoy!</strong>
+    <p class = "lead"><i>While there are many "correct" ways to play poker, our solver combines mathematical thinking and player analysis to produce a profitable outcome. Here are some key considerations to keep in mind:</i>
+
+        
     <p><strong>How does the platform work? </strong>Building off of a rudimentary equity calculator (your percentage chance of winning) our platform tells you whether you should call, fold or raise, and by how much. We also take into account variables such as opponent type and pre-flop action, along side randomizers to make marginal decisions.</p>
     <p><strong>Is there one best way to play poker?</strong> No, but there are good ways to play poker! Our website uses Game Theory Optimal, a mathematical approach to poker, as a foundation. We then add our own expertise to make reccommendations on any given hand.</p>
     <p><strong>How does the equity calculator work? </strong>We use the mathematical concept of "Pot Odds" to determine what the most profitable play is.</p>

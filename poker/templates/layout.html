@@ -6,7 +6,7 @@
       <link href="styles.css" rel="stylesheet">
    </head>
    <body>
-    <!-- This is the code for the navbar. I used bootstrap for this -->
+    <!-- This is the code for the navbar. We used bootstrap for this -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
            <a class="navbar-brand" href="#">Poker.com</a>
@@ -16,10 +16,10 @@
             <div class="collapse navbar-collapse" id="navbar">
                {% if session["user_id"] %}
                    <ul class="navbar-nav me-auto mt-2">
+                       <li class="nav-item"><a class="nav-link" href="/guide">Guide to Poker</a></li>
                        <li class="nav-item"><a class="nav-link" href="/calculator">Equity Calculator</a></li>
-                       <li class="nav-item"><a class="nav-link" href="/buy">Guide to Poker</a></li>
-                       <li class="nav-item"><a class="nav-link" href="/sell">Tips and Tricks</a></li>
-                       <li class="nav-item"><a class="nav-link" href="/history">Frequently Asked Questions</a></li>
+                       <li class="nav-item"><a class="nav-link" href="/tipsandtricks">Tips and Tricks</a></li>
+                       <li class="nav-item"><a class="nav-link" href="/design">Design Principles</a></li>
                    </ul>
                    <ul class="navbar-nav ms-auto mt-2">
                        <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
