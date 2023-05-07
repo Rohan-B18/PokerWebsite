@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Solver!
+{% endblock %}
+
+{% block main %}
+    <form action="/calculator" method="post">
+        <div class="mb-3">
+            <label for="nb_simulation" class="form-label">Number of simulations:</label>
+            <input class="form-control" type="number" id="nb_simulation" name="nb_simulation">
+        </div>
+        <div class="mb-3">
+            <label for="nb_player" class="form-label">Number of players:</label>
+            <input class="form-control" type="number" id="nb_player" name="nb_player">
+        </div>
+        <div class="mb-3">
+            <label for="hole_card" class="form-label">Your hole cards:</label>
+            <input class="form-control" type="text" id="hole_card" name="hole_card">
+        </div>
+        <div class="mb-3">
+            <label for="amount_to_call" class="form-label">Amount to call:</label>
+            <input class="form-control" type="number" id="amount_to_call" name="amount_to_call">
+        </div>
+        <div class="mb-3">
+            <label for="pot_size" class="form-label">Pot size:</label>
+            <input class="form-control" type="number" id="pot_size" name="pot_size">
+        </div>
+        <div class="mb-3">
+            <label for="stack_size" class="form-label">Stack size:</label>
+            <input class="form-control" type="number" id="stack_size" name="stack_size">
+        </div>
+        <div class="mb-3">
+            <label for="pre_flop_aggressor" class="form-label">Pre-flop aggressor:</label>
+            <select class="form-control" id="pre_flop_aggressor" name="pre_flop_aggressor">
+                <option value="True">Yes</option>
+                <option value="False">No</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="table_tightness" class="form-label">Table tightness:</label>
+            <select class="form-control" id="table_tightness" name="table_tightness">
+                <option value="True">Tight</option>
+                <option value="False">Loose</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="community_card" class="form-label">Community cards:</label>
+            <input class="form-control" type="text" id="community_card" name="community_card">
+        </div>
+        <button class="btn btn-primary" type="submit">Calculate</button>
+    </form>
+{% endblock %}

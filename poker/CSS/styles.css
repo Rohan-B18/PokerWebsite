@@ -1,0 +1,53 @@
+/* Navbar styling */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-link {
+    font-size: 1.2rem;
+    color: #fafafa;
+}
+.nav-link.active {
+    font-weight: bold;
+}
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+.nav-link:hover {
+    color: #4ae7ff;
+}
+.nav-link.active:hover {
+    color: #4ae7ff;
+}
+
+/* Main content styling */
+.img-fluid {
+    max-width: 100%;
+}
+.col-md-4 {
+    text-align: center;
+}
+.col-md-8 {
+    padding-left: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+li {
+    margin-bottom: 0.5rem;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
