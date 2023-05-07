@@ -120,20 +120,20 @@ def register():
 def index():
     return render_template("index.html")
 
-@app.route("/design")
+@app.route("/tipsandtricks")
 @login_required
-def design():
-    return render_template("design.html")
+def tipsandtricks():
+    return render_template("tipsandtricks.html")
 
 @app.route("/guide")
 @login_required
 def guide():
     return render_template("guide.html")
 
-@app.route("/tipsandtricks")
+@app.route("/quiz")
 @login_required
-def tipsandtricks():
-    return render_template("tipsandtricks.html")
+def quiz():
+    return render_template("quiz.html")
 
 
 @app.route("/calculator", methods=["GET", "POST"])
