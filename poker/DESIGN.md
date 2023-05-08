@@ -20,17 +20,14 @@ Our main motivation behind executing this project is that we love poker, and wan
 
 The intended users of our project are 1. Those who wish to learn poker 2. Experienced players who wish to improve their game. By having a variety of functions (a guide for poker, a solver, and two quizes a basic quiz and an advanced training simulator) poker players from all walks of life can use our solver.
 
-These are the users who interact directly with our project, and intuitively, they want and need a way to improve their poker play. Depending on their view on poker, they may value the game as a purely entertaining pass time, or even a source of income. Hopefully our project will benefit poker players 
+These are the users who interact directly with our project, and intuitively, they want and need a way to improve their poker play. Depending on their view on poker, they may value the game as a purely entertaining pass time, or even a source of income. Hopefully our project will benefit poker players
 
+Those who are impacted indirectly from our project may be family members or close friends of poker players. Poker and gambling, depending on culture or region, may be a taboo past time or something that is looked down upon. Rohan and I certainly do not want poker players to get addicted, and we're hoping that our website doesn't contribute to unhealthy gambling habits.
 
-You should consider your project's users to be those who interact _directly_ with your project, as well as those who might interact with it _indirectly_, through others' use of your project.
+### How does your project's impact on users change as the project scales up?
 
+The largest social concern that we anticipate is the aforementioend issue of addiction and gambling. Although this website targets already interested poker players (and there are better ways to attract new players), our project may contribute to addiction. As the project scales up, more and more poker players may become invested into the game, which is a good or bad thing based on their relationship with poker.
+ᐧ
 
-
-### How does your project's impact on users change as the project scales up? 
-You might choose one of the following questions to reflect on:
-* How could one of your project's features be misused?
-* Are there any types of users who might have difficulty using your project?
-* If your project becomes widely adopted, are there social concerns you might anticipate?
 
 

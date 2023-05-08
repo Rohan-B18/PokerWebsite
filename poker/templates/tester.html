@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tester
+{% endblock %}
+
+{% block main %}
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Information and how to submit a decision</h5>
+                </div>
+                <div class="card-body">
+                    <p>Pot Size: {{ pot_size }}</p>
+                    <p>Amount to Call: {{ amount_to_call }}</p>
+                    <p>Is the table tight: {{ "Yes" if table_tightness else "No" }}</p>
+                    <p>Your cards: {{ hole_card_list }}</p>
+                    <p>Flop: {{ community_card_list }}</p>
+                    <p>Were you the pre-flop aggressor: {{ "Yes" if pre_flop_aggressor else "No" }}</p>
+                    <p>Stack size: {{ stack_size }}</p>
+                </div>
+                <div class="card-body">
+                    <p>Submit 1 if you should definitely fold</p>
+                    <p>Submit 2 if you should go all in</p>
+                    <p>Submit 3 if you should raise</p>
+                    <p>Submit 4 if you should fold because you have marginal equity, but the table is tight and people know you're the pre-flop aggressor</p>
+                    <p>Submit 5 if you should call because you have marginal equity, but  the table is loose and you're not the pre-flop aggressor </p>
+                    <p>Submit 6 if it's either call/fold, because you have marginal equity and there is contradicting information</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="/tester" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="user_input" name="user_input" placeholder="0, 1, 2, 3, 4, 5 or 6" type="number">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+{% endblock %}

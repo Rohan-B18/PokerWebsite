@@ -17,7 +17,7 @@
    </head>
    <body>
 <script>
-            
+
 document.addEventListener('DOMContentLoaded', function() {
 
 // Adapted from Trivia Problem Set
@@ -57,19 +57,17 @@ for (let i = 0; i < incorrects.length; i++) {
 }
 
 });
-        </script>
+    </script>
     </head>
     <body>
-    </div>
-
-        <div class="header">
-            <h1>Test Your Skills Here!</h1>
-
-    </div>
-
-    <div class="container">
-        <div class="section">
-            <p>The pot is $100 and your opponent bets $100. What are your pot odds?</p>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Test your skills here!</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>The pot is $100 and your opponent bets $100. What are your pot odds?</p>
             <button class="incorrect">100%</button>
             <button class="incorrect">300%</button>
             <button class="incorrect">33%</button>
@@ -81,21 +79,20 @@ for (let i = 0; i < incorrects.length; i++) {
             <button class="incorrect">15%</button>
             <button class="incorrect">135%</button>
             <button class="incorrect">54%</button>
-    
+
 
             <p>The pot is $100 and your opponent bets $50. How much equity do you need minimum to make the call</p>
             <button class="correct">25% Equity</button>
             <button class="incorrect">125% Equity</button>
             <button class="incorrect">35% Equity</button>
             <button class="incorrect">5% Equity</button>
-    
-
+                    </div>
+                </div>
             </div>
         </div>
     </body>
 </html>
 
 {% endblock %}
-
 
 

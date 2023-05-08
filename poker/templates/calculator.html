@@ -16,7 +16,7 @@
         </div>
         <div class="mb-3">
             <label for="hole_card" class="form-label">Your hole cards:</label>
-            <input class="form-control" type="text" id="hole_card" name="hole_card">
+            <input class="form-control" type="text" id="hole_card1" name="hole_card1" value="">
         </div>
         <div class="mb-3">
             <label for="amount_to_call" class="form-label">Amount to call:</label>
@@ -31,22 +31,18 @@
             <input class="form-control" type="number" id="stack_size" name="stack_size">
         </div>
         <div class="mb-3">
-            <label for="pre_flop_aggressor" class="form-label">Pre-flop aggressor:</label>
-            <select class="form-control" id="pre_flop_aggressor" name="pre_flop_aggressor">
-                <option value="True">Yes</option>
-                <option value="False">No</option>
+            <label for="pre_flop_aggressor" class="form-label">Pre-flop aggressor: (Enter 1 if pre-flop aggressor and 0 if not)</label>
+                <input class="form-control" type="number" id="pre_flop_aggressor" name="pre_flop_aggressor">
             </select>
         </div>
         <div class="mb-3">
-            <label for="table_tightness" class="form-label">Table tightness:</label>
-            <select class="form-control" id="table_tightness" name="table_tightness">
-                <option value="True">Tight</option>
-                <option value="False">Loose</option>
+            <label for="table_tightness" class="form-label">Table tightness: (Enter 1 if a tight table and 0 if not)</label>
+                <input class="form-control" type="number" id="table_tightness" name="table_tightness">
             </select>
         </div>
         <div class="mb-3">
-            <label for="community_card" class="form-label">Community cards:</label>
-            <input class="form-control" type="text" id="community_card" name="community_card">
+            <label for="community_card" class="form-label">Community Cards:</label>
+            <input class="form-control" type="text" id="community_card1" name="community_card1" value="">
         </div>
         <button class="btn btn-primary" type="submit">Calculate</button>
     </form>
